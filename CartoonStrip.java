@@ -12,8 +12,9 @@ import ecs100.*;
  */
 public class CartoonStrip{
     // fields
-    private CartoonCharacter Casey = new CartoonCharacter(50, 100, "casey");
-    private CartoonCharacter Bob = new CartoonCharacter(150, 100, "bob");
+    private CartoonCharacter casey = new CartoonCharacter(50, 100, "casey");
+    private CartoonCharacter bob = new CartoonCharacter(200, 100, "bob");
+    private CartoonCharacter alice = new CartoonCharacter(350, 100, "alice");
     
     /** 
      * tellStory creates two cartoon characters on the window.
@@ -21,8 +22,19 @@ public class CartoonStrip{
      * of methods on the characters.
      */
     public void tellStory(){
-        Casey.lookRight();
-        Casey.walk(300.0);
+        CartoonCharacter casey = new CartoonCharacter(50, 100, "casey");
+        CartoonCharacter bob = new CartoonCharacter(350, 100, "bob");
+        casey.lookRight();
+        casey.walk(400.0);
+        casey.lookLeft();
+        casey.speak("BOB!");
+        bob.lookRight();
+        bob.speak("Yes Casey???");
+        casey.speak("Why did the chicken cross the road?");
+        bob.speak("I don't know Casey, why?");
+        casey.speak("To get to the other side!");
+        bob.speak("That wasn't very original");
+        casey.speak("Too bad");
     }
 
     /** 
@@ -31,7 +43,9 @@ public class CartoonStrip{
      * by calling the dance method.
      */
     public void threeDancers(){
-        /*# YOUR CODE HERE */
+        dance(casey);
+        dance(bob);
+        dance(alice);
     }
 
     /** 
@@ -39,7 +53,11 @@ public class CartoonStrip{
      * Has one parameter - a CartoonCharacter object
      */
     public void dance(CartoonCharacter face){
-        /*# YOUR CODE HERE */
+        face.lookRight();
+        face.lookLeft();
+        face.speak("HEY!");
+        face.lookRight();
+        face.speak("Ta Da!");
     }
 
 }

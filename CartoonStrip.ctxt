@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=CartoonStrip
+comment0.text=\r\n\ Code\ for\ 13DTC\r\n\ Name\:\ Josh\ Clark\r\n\ Date\:\ 15/04/2021\r\n\ Program\ to\ create\ simple\ animated\ cartoon\ strips\ using\ the\r\n\ CartoonCharacter\ class.\ \ \r\n
+comment1.params=
+comment1.target=void\ tellStory()
+comment1.text=\ \r\n\ tellStory\ creates\ two\ cartoon\ characters\ on\ the\ window.\r\n\ Then\ animates\ them\ according\ to\ a\ fixed\ script\ by\ calling\ a\ series\r\n\ of\ methods\ on\ the\ characters.\r\n
+comment2.params=
+comment2.target=void\ threeDancers()
+comment2.text=\ \r\n\ threeDancers\ creates\ three\ cartoon\ characters\ on\ the\ window.\r\n\ Then\ makes\ each\ character\ do\ the\ same\ little\ dance\ in\ turn,\r\n\ by\ calling\ the\ dance\ method.\r\n
+comment3.params=face
+comment3.target=void\ dance(CartoonCharacter)
+comment3.text=\ \r\n\ Makes\ a\ character\ do\ a\ little\ dance.\r\n\ Has\ one\ parameter\ -\ a\ CartoonCharacter\ object\r\n
+numComments=4
